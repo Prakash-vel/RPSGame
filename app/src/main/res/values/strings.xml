@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RPS Game</string>
+    <string name="you_won">YOU WON</string>
+    <string name="you_lose">YOU LOSE</string>
+
+    <string name="three_dots">...</string>
+</resources>

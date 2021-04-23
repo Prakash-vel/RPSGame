@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment_paper"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/rockButton"
+        android:layout_width="@dimen/smallImageSize"
+        android:layout_height="@dimen/smallImageSize"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rock" />
+
+    <ImageView
+        android:id="@+id/paperButton"
+        android:layout_width="@dimen/smallImageSize"
+        android:layout_height="@dimen/smallImageSize"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/scissorButton"
+        app:layout_constraintStart_toEndOf="@+id/rockButton"
+        app:srcCompat="@drawable/paper" />
+
+    <ImageView
+        android:id="@+id/scissorButton"
+        android:layout_width="@dimen/smallImageSize"
+        android:layout_height="@dimen/smallImageSize"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/scissors" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/three_dots"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@+id/paperButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myImageView" />
+
+    <ImageView
+        android:id="@+id/computerImageView"
+        android:layout_width="@dimen/bigImageSize"
+        android:layout_height="@dimen/bigImageSize"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/outlawrock" />
+
+    <ImageView
+        android:id="@+id/myImageView"
+        android:layout_width="@dimen/bigImageSize"
+        android:layout_height="@dimen/bigImageSize"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/computerImageView"
+        app:srcCompat="@drawable/sheriffrock" />
+</androidx.constraintlayout.widget.ConstraintLayout>
